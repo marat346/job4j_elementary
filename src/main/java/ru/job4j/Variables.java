@@ -16,7 +16,7 @@ public class Variables {
         System.out.println(distance);
         boolean baby = true;
         System.out.println(baby);
-        char gender = 'Y';
+        char gender = 'M';
         System.out.println(gender);
     }
 }
