@@ -15,7 +15,7 @@ public class DivideBySix {
         return rsl;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
     String resuls1 = DivideBySix.checkNumber(24);
     String resuls2 = DivideBySix.checkNumber(9);
     String resuls3 = DivideBySix.checkNumber(14);
