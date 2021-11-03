@@ -9,27 +9,19 @@ public class SqAreaTest {
     public void whenP6K2Square2() {
         int expected = 2;
         int p = 6;
-        double k = 2;
-        double out = SqArea.ratio(p, k);
+        int k = 2;
+        int out = SqArea.ratio(p, k);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void whenP8K4Square2Dot56() {
-        double expected = 2.56;
-        int p = 8;
-        double k = 4;
-        double out = SqArea.ratio(p, k);
+    public void whenP4K1Square1() {
+        int expected = 1;
+        int p = 4;
+        int k = 1;
+        int out = SqArea.ratio(p, k);
         Assert.assertEquals(expected, out, 0.01);
-    }
-
-    @Test
-    public void whenP10K6Square3Dot06() {
-        double expected = 3.06;
-        int p = 10;
-        double k = 6;
-        double out = SqArea.ratio(p, k);
-        Assert.assertEquals(expected, out, 0.01);
-
     }
 }
+
+
