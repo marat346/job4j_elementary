@@ -6,8 +6,8 @@ public class ArrayLoop {
         for (int index = 0; index < wave.length; index++) {
           wave[index] = index * 2 + 3;
         }
-        for (int index = 0; index < wave.length; index++) {
-            System.out.println(wave[index]);
+        for (int big : wave) {
+            System.out.println(big);
         }
     }
 }
