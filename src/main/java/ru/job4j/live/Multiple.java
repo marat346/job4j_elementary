@@ -1,4 +1,4 @@
-package ru.job4j.ru.job4j;
+package ru.job4j.live;
 
 public class Multiple {
     public static void main(String[] args) {
