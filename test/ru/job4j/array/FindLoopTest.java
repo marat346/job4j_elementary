@@ -27,7 +27,7 @@ public class FindLoopTest {
     @Test
     public void whenFindOff1() {
         int[] data = new int[]{5, 2, 10, 2, 4};
-        int el = 9;
+        int el = 2;
         int start = 2;
         int finish = 4;
         int result = FindLoop.indexOf(data, el, start, finish);
