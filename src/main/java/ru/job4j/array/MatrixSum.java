@@ -1,7 +1,5 @@
 package ru.job4j.array;
 
-import ru.job4j.loop.Counter;
-
 public class MatrixSum {
     public static int sum(int[][] array) {
         int rsl = 0;
