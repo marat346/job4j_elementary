@@ -10,7 +10,7 @@ public class ArithmeticActionsTest {
     @Test
     public void selectActionAdded() {
         String action = ArithmeticActions.selectAction(5, 10, 15);
-        Assert.assertThat(action, is("added"));
+        assertThat(action, is("added"));
     }
 
     @Test
