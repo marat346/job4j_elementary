@@ -2,19 +2,18 @@ package ru.job4j.condition;
 
 public class ArithmeticActions {
     public static String selectAction(int left, int right, int rsl) {
-        String fifa = "none";
         if ((left + right) == rsl) {
-            fifa = "added";
+            return "added";
         }
         if ((left - right) == rsl) {
-            fifa = "subtracted";
+            return "subtracted";
         }
         if ((left * right) == rsl) {
-            fifa = "multiplied";
+            return "multiplied";
         }
         if ((left / right) == rsl) {
-            fifa = "divided";
+            return "divided";
         }
-        return fifa;
+        return "none";
     }
 }
