@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class LeapYearTest {
     @Test
     public void checkYearFalse() {
-        boolean b = LeapYear.checkYear(2);
+        boolean b = LeapYear.checkYear(2019);
         assertThat(b, is(false));
     }
 
