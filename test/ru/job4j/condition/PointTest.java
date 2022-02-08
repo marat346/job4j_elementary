@@ -1,40 +1,38 @@
 package ru.job4j.condition;
 
+
 import org.junit.Assert;
 import org.junit.Test;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
 
 public class PointTest {
 
     @Test
     public void when00to20then2() {
-        double expected = 2;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
+        a.distance(b);
+        double expected = 2.0;
+        assertThat(expected, is(a.distance(b)));
     }
 
     @Test
     public void when23to75then5Dot39() {
+        Point a = new Point(2, 3);
+        Point b = new Point(7, 5);
+        a.distance(b);
         double expected = 5.39;
-        int x1 = 2;
-        int y1 = 3;
-        int x2 = 7;
-        int y2 = 5;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+        assertThat(expected, is(a.distance(b)));
     }
 
     @Test
     public void when32to94then6Dot33() {
+        Point a = new Point(3, 2);
+        Point b = new Point(9, 4);
+        a.distance(b);
         double expected = 6.33;
-        int x1 = 3;
-        int y1 = 2;
-        int x2 = 9;
-        int y2 = 4;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+        assertThat(expected, is(a.distance(b)));
     }
 }
