@@ -26,8 +26,8 @@ public class MatrixCheck {
     public static char[] extractDiagonal(char[][] board) {
         char[] rsl = new char[board.length];
         for (int i = 0; i < rsl.length; i++) {
-                rsl[i] = board[i][i];
-            }
+            rsl[i] = board[i][i];
+        }
         return rsl;
     }
 
