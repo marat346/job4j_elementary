@@ -18,7 +18,7 @@ public class PointTest {
     @Test
     public void when23to75then5Dot39() {
         Point a = new Point(2, 3);
-        Point b = new Point(5, 7);
+        Point b = new Point(7, 5);
         double result = a.distance(b);
         double expected = 5.39;
         Assert.assertEquals(expected, result, 0.01);
