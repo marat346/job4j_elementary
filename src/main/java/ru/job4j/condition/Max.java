@@ -7,12 +7,18 @@ public class Max {
         return result;
     }
 
-    public static void main(String[] args) {
-        int more = Max.max(1, 2);
-        int more1 = Max.max(2, 1);
-        int more2 = Max.max(7, 7);
-        System.out.println(more);
-        System.out.println(more1);
-        System.out.println(more2);
+    public int add(int left, int right, int left1) {
+        return max(
+                left,
+                max(right, left1)
+        );
+    }
+
+    public int add(int left, int right, int left1, int right1) {
+        return max(
+                left,
+                add(right, left1, right1)
+        );
     }
 }
+
