@@ -8,19 +8,19 @@ public class PointTest {
 
     @Test
     public void when00to20then2() {
-        Point a = new Point(0, 0, 2);
-        Point b = new Point(0, 2, 3);
-        double result = a.distance3d(b);
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
+        double result = a.distance(b);
         double expected = 2;
         Assert.assertEquals(expected, result, 0.01);
     }
 
     @Test
     public void when23to75then5Dot39() {
-        Point a = new Point(2, 3, 0);
-        Point b = new Point(7, 5, 3);
-        double result = a.distance3d(b);
-        double expected = 6.16;
+        Point a = new Point(2, 3);
+        Point b = new Point(7, 5);
+        double result = a.distance(b);
+        double expected = 5.38;
         Assert.assertEquals(expected, result, 0.01);
     }
 
@@ -30,6 +30,24 @@ public class PointTest {
         Point b = new Point(9, 4);
         double result = a.distance(b);
         double expected = 6.33;
+        Assert.assertEquals(expected, result, 0.01);
+    }
+
+    @Test
+    public void when000to111then1dot73() {
+        Point a = new Point(0, 0, 0);
+        Point b = new Point(1, 1, 1);
+        double result = a.distance3d(b);
+        double expected = 1.73;
+        Assert.assertEquals(expected, result, 0.01);
+    }
+
+    @Test
+    public void when123to010then3dot31() {
+        Point a = new Point(1, 2, 3);
+        Point b = new Point(0, 1, 0);
+        double result = a.distance3d(b);
+        double expected = 3.31;
         Assert.assertEquals(expected, result, 0.01);
     }
 }
