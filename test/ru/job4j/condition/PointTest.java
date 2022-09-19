@@ -35,19 +35,19 @@ public class PointTest {
 
     @Test
     public void when000to111then1dot73() {
-        Point a = new Point(0, 0, 0);
-        Point b = new Point(1, 1, 1);
-        double result = a.distance3d(b);
-        double expected = 1.73;
+        Point a = new Point(0, 0);
+        Point b = new Point(1, 1);
+        double result = a.distance(b);
+        double expected = 1.41;
         Assert.assertEquals(expected, result, 0.01);
     }
 
     @Test
     public void when123to010then3dot31() {
-        Point a = new Point(1, 2, 3);
-        Point b = new Point(0, 1, 0);
-        double result = a.distance3d(b);
-        double expected = 3.31;
+        Point a = new Point(2, 3);
+        Point b = new Point(0, 1);
+        double result = a.distance(b);
+        double expected = 2.82;
         Assert.assertEquals(expected, result, 0.01);
     }
 }
